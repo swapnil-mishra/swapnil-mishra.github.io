@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Responsive Portfolio Website</title>
     </head>
-    <body>
+    <body oncontextmenu="return false;">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -23,39 +23,52 @@
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list grid">
                         <li class="nav_item">
-                            <a href="#home" class="nav_link">
+                            <a href="#home" class="nav_link active-link">
                                 <i class="uil uil-estate nav_icon"></i>Home
                             </a>
-                        </li>
+                            </li>
+                        
                         <li class="nav_item">
                             <a href="#about" class="nav_link">
                                 <i class="uil uil-user nav_icon"></i>About
                             </a>
                         </li>
+                        
                         <li class="nav_item">
                             <a href="#skills" class="nav_link">
                                 <i class="uil uil-file-alt nav_icon"></i>Skills
                             </a>
                         </li>
+                        
                         <li class="nav_item">
                             <a href="#services" class="nav_link">
                                 <i class="uil uil-briefcase-alt nav_icon"></i>Services
                             </a>
                         </li>
+                        
                         <li class="nav_item">
                             <a href="#portfolio" class="nav_link">
                                 <i class="uil uil-arrow nav_icon"></i>Portfolio
                             </a>
                         </li>
                         <li class="nav_item">
+                            <a href="blog.html" class="nav_link">
+                                <i class="uil uil-arrow nav_icon"></i>Blog
+                            </a>
+                        </li>
+                        
+                        <li class="nav_item">
                             <a href="#contact" class="nav_link">
                                 <i class="uil uil-message nav_icon"></i>Contact
                             </a>
                         </li>
+                        
                     </ul>
                     <i class="uil uil-times nav_close" id="nav-close"></i>
                 </div>
                 <div class="nav_btns">
+                    <!--Theme change buttom-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -102,9 +115,17 @@
                             </svg>
                         </div>
                         <div class="home_data">
-                            <h1 class="home_title">Hi, I'm Swapnil</h1>
-                            <h3 class="home_subtitle">Blogger | FullStack Web Developer</h3>
-                            <p class="home_description">*****************************</p>
+                            <h1 class="home_title">Swapnil Mishra</h1>
+                            <h3 class="home_subtitle">Software Engineer at |company|</h3>
+                            <div class="wrapper">
+                                <div class="static-txt home_subtitle">I'm a</div>
+                                <ul class="dynamic-txts home_subtitle">
+                                    <li><span>Blogger</span></li>
+                                    <li><span>Designer</span></li>
+                                    <li><span>Developer</span></li>
+                                    <li><span>Freelancer</span></li>
+                                </ul>
+                            </div>
                             <a href="#contact" class="button button--flex">
                                 Contact Me<i class="uil uil-message button_icon"></i>
                             </a>
@@ -125,22 +146,28 @@
                 <h2 class="section_title">About Me</h2>
                 <span class="section_subtitle">My introduction</span>
                 <div class="about_container container grid">
-                    <img src="assets/img/profile.png" alt="" class="about_img">
+                    <img src="assets/img/swapnilmishra8.jpeg" alt="" class="about_img">
                     <div class="about_data">
-                        <p class="about_description">***********************</p>
+                        <p class="about_description">I am a software engineer fresher with an interest for design and fullstack software development.
+                        Tech-savvy and a fast learner with natural curiosity for learning new skills,
+                        undertaking projects and translate industry requirements into technical solutions.</p>
                         <div class="about_info">
                             <div>
-                                <span class="about_info-title">2+</span>
+                                <span class="about_info-title counting" data-count="2">0</span>
                                 <span class="about_info-name">Years<br>Internship experience</span>
                             </div>
                             <div>
-                                <span class="about_info-title">7+</span>
+                                <span class="about_info-title counting" data-count="5">0</span>
                                 <span class="about_info-name">Completed<br>projects</span>
+                            </div>
+                            <div>
+                                <span class="about_info-title counting" data-count="2">0</span>
+                                <span class="about_info-name">Companies<br>worked</span>
                             </div>
                         </div>
                         <div class="about_buttons">
                             <a download="" href="assets/pdf/swapnil-mishra.pdf" class="button button--flex">
-                                Download<i class="uil uil-download-alt button_icon"></i>
+                                Download my information<i class="uil uil-download-alt button_icon"></i>
                             </a>
                         </div>
                     </div>
@@ -549,46 +576,407 @@
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                
+                   <h2 class="section_title">Work</h2>
+                   <span class="section_subtitle">What I work on</span>
+                   <div class="services_container container grid">
+                       <!------------Service 1------------>
+                       <div class="services_content">
+                           <div>
+                               <i class="uil uil-web-grid services_icon"></i>
+                               <h3 class="services_title">UI/UX<br>Designer</h3>
+                           </div>
+                           <span class="button button--flex button--small button--link services_button">
+                               View More <i class="uil uil-arrow-right button_icon"></i>
+                           </span>
+                           <div class="services_modal">
+                               <div class="services_modal-content">
+                                   <h4 class="services_modal-title">UI/UX<br>Designer</h4>
+                                   <i class="uil uil-times services_modal-close"></i>
 
+                                   <ul class="services_modal-services grid">
+                                       <li class="services_modal-service">
+                                           <i class="uil uil-check-circle services_modal-icon"></i>
+                                           <p>Webpage and apps mockups</p>
+                                       
+                                    <li class="services_modal-service">
+                                        <i class="uil uil-check-circle services_modal-icon"></i>
+                                        <p>Product Design</p>
+                                    
+                                    <li class="services_modal-service">
+                                        <i class="uil uil-check-circle services_modal-icon"></i>
+                                        <p>Interactive UI design</p>
+                                    
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+
+                        <!------------Service 2------------>
+                        <div class="services_content">
+                            <div>
+                                <i class="uil uil-arrow services_icon"></i>
+                                <h3 class="services_title">Web<br>Developer</h3>
+                            </div>
+                            <span class="button button--flex button--small button--link services_button">
+                                View More <i class="uil uil-arrow-right button_icon"></i>
+                            </span>
+                            <div class="services_modal">
+                                <div class="services_modal-content">
+                                    <h4 class="services_modal-title">Web<br>Developer</h4>
+                                    <i class="uil uil-times services_modal-close"></i>
+                        
+                                    <ul class="services_modal-services grid">
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Website Frontend Development</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Website Backend Development</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Database Management</p>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------------Service 3------------>
+                        <div class="services_content">
+                            <div>
+                                <i class="uil uil-mobile-android services_icon"></i>
+                                <h3 class="services_title">App<br>Developer</h3>
+                            </div>
+                            <span class="button button--flex button--small button--link services_button">
+                                View More <i class="uil uil-arrow-right button_icon"></i>
+                            </span>
+                            <div class="services_modal">
+                                <div class="services_modal-content">
+                                    <h4 class="services_modal-title">App<br>Developer</h4>
+                                    <i class="uil uil-times services_modal-close"></i>
+                        
+                                    <ul class="services_modal-services grid">
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>App Frontend Development</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>App Backend Development</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>App connection to realtime firebase</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>App build</p>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------------Service 4------------>
+                        <div class="services_content">
+                            <div>
+                                <i class="uil uil-pen services_icon"></i>
+                                <h3 class="services_title">Branding<br>Designer</h3>
+                            </div>
+                            <span class="button button--flex button--small button--link services_button">
+                                View More <i class="uil uil-arrow-right button_icon"></i>
+                            </span>
+                            <div class="services_modal">
+                                <div class="services_modal-content">
+                                    <h4 class="services_modal-title">Branding<br>Designer</h4>
+                                    <i class="uil uil-times services_modal-close"></i>
+                        
+                                    <ul class="services_modal-services grid">
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Logo Designs</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Banner Designs</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Brochure Designs</p>
+                                        
+                                        <li class="services_modal-service">
+                                            <i class="uil uil-check-circle services_modal-icon"></i>
+                                            <p>Template Designs</p>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                   </div>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                
+                <h2 class="section_title">Portfolio</h2>
+                <span class="section_subtitle">Most recent works</span>
+                <div class="portfolio_container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-------------Portfolio 1---------------->
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/img/sentidatalyzer.png" alt="sentidatalyzer" class="portfolio_img">
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Sentidatalyzer Application</h3>
+                                <p class="portfolio_description">Sentidatalyzer is a sentiment analyzer application that identifies the customer sentiment through the customer feedback
+                                and accordingly sends the input data to the output file to analyse and predict customer’s satisfaction behaviour .</p>
+                                <a href="https://github.com/swapnil-mishra/sentidatalyzer" target="_blank" class="button button--flex button--small portfolio_button">
+                                    Demo<i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
-            </section>
+                        <!-------------Portfolio 2---------------->
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/img/ordersummary.png" alt="" class="portfolio_img">
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Order Summary</h3>
+                                <p class="portfolio_description">
+                                        Two-column layout representation of cart items and total cost where 
+                                        the change in total cost, product type discount and normal discount with change in items and its quantity is implemented
+                                        dynamically.
+                                </p>
+                                <a href="https://github.com/swapnil-mishra/OrderSummary" target="_blank"
+                                    class="button button--flex button--small portfolio_button">
+                                    Demo<i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+                        <!-------------Portfolio 3---------------->
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="assets/img/sicalculator.png" alt="" class="portfolio_img">
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Simple Interest Calculator</h3>
+                                <p class="portfolio_description">A simple interest calculator to calculate the amount based on inputs from the 
+                                    user(principal, rate of interest(slider input), time) </p>
+                                <a href="https://swapnil-mishra.github.io/Simple-Interest-Calculator/" target="_blank"
+                                    class="button button--flex button--small portfolio_button">
+                                    Demo<i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
+                    </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next">
+                            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                </div>
 
             </section>
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section">
-                
+                <h2 class="section_title">Certifications</h2>
+                <span class="section_subtitle">Certified in</span>
+                <div class="testimonial_container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!---------Testimonial 1---------------->
+                        <div class="testimonial_content swiper-slide ">
+                            <div class="testimonial_data">
+                                <div class="testimonial_header">
+                                    <img src="assets/img/microsoft.png" alt="" class="testimonial_img">
 
+                                    <div>
+                                        <h3 class="testimonial_name">Microsoft Azure Fundamentals (AZ-900)</h3>
+                                        <span class="testimonial_client">Microsoft Certification</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="testimonial_description">View certificate <a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=414&cvid=3qc0fJh5DoLd56TbnVmzpw==" class="" target="_blank"><u>here</u></a></p>
+
+                        </div>
+                        <!---------Testimonial 2---------------->
+                        <div class="testimonial_content swiper-slide">
+                            <div class="testimonial_data">
+                                <div class="testimonial_header">
+                                    <img src="assets/img/ibm.png" alt="" class="testimonial_img">
+                        
+                                    <div>
+                                        <h3 class="testimonial_name">Introduction to Cloud Development with HTML, CSS, & JavaScript</h3>
+                                        <span class="testimonial_client">IBM edX Certification</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <p class="testimonial_description">View certificate <a
+                                    href="https://courses.edx.org/certificates/00bece61b6384fb48b938c279f1ff5a7"
+                                    class="" target="_blank"><u>here</u></a></p>
+                        
+                        </div>
+                        <!---------Testimonial 3---------------->
+                        <div class="testimonial_content swiper-slide">
+                            <div class="testimonial_data">
+                                <div class="testimonial_header">
+                                    <img src="assets/img/google.png" alt="" class="testimonial_img">
+                        
+                                    <div>
+                                        <h3 class="testimonial_name">Fundamentals of digital marketing</h3>
+                                        <span class="testimonial_client">Google Certification</span>
+                                    </div>
+                                </div>                            
+                            </div>
+                        
+                            <p class="testimonial_description">View certificate <a
+                                    href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" class=""
+                                    target="_blank"><u>here</u></a></p>
+                        
+                        </div>
+                        
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                <div class="project_bg">
+                    <div class="project_container container grid">
+                        <div class="project_data">
+                            <h2 class="project_title">Liked my works?</h2>
+                            <p class="project_description">Contact to learn more about me.</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me <i class="uil uil-message project_icon button_icon"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/swap.png" alt="" class="project_img">
+                    </div>
+                </div>
             </section>
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section_title">Contact Me</h2>
+                <span class="section_subtitle">Get in touch</span>
+                <div class="contact_container container grid">
+                    <div>
 
+                        <div class="contact_information">
+                            <i class="uil uil-phone contact_icon"></i>
+                            <div>
+                                <h3 class="contact_title">Contact No.</h3>
+                                <span class="contact_subtitle">(+91) 7003158846</span>
+                            </div>
+                        </div>
 
+                        <div class="contact_information">
+                            <i class="uil uil-envelope contact_icon"></i>
+                            <div>
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">swapnil-mishra@hotmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact_information">
+                            <i class="uil uil-map-marker contact_icon"></i>
+                            <div>
+                                <h3 class="contact_title">Location</h3>
+                                <span class="contact_subtitle">Kolkata, West Bengal</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <form action="" class="contact_form grid">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Email</label>
+                                <input type="email" class="contact_input">
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Name</label>
+                                <input type="text" class="contact_input">
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Contact Number</label>
+                                <input type="number" class="contact_input">
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Message</label>
+                                <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                            </div>
+                        </div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </form>
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Swapnil Mishra</h1>
+                        <span class="footer_subtitle">Software Engineer</span>
+                    </div>
 
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#services" class="footer_link">Work</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer_socials">
+                        <a href="https://facebook.com/swapnilmishra8" target="_blank" class="footer_social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/_swapnilmishra" target="_blank" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                        <a href="https://instagram.com/_swapnilmishra" target="_blank" class="footer_social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/swapnil-mishra" target="_blank" class="footer_social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer_copy">&#169; Swapnil Mishra. All rights reserved.</p>
+            </div>
             
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== J Query ====================-->
+        <script src="assets/js/jquery.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

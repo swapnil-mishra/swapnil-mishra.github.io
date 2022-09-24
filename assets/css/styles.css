@@ -506,22 +506,34 @@ img{
     width: 85%;
 }
 .skills_js{
-    width: 60%;
+    width: 70%;
+}
+.skills_bs {
+    width: 70%;
+}
+.skills_rjs {
+    width: 50%;
 }
 .skills_java{
-    width: 90%;
+    width: 80%;
+}
+.skills_cs {
+    width: 85%;
 }
 .skills_c{
     width: 70%;
 }
-.skills_oracle{
+.skills_sqlserver {
     width: 90%;
 }
-.skills_mysql{
+.skills_oracle{
     width: 85%;
 }
+.skills_mysql{
+    width: 80%;
+}
 .skills_msazure{
-    width: 70%;
+    width: 60%;
 }
 .skills_illustrator{
     width: 70%;

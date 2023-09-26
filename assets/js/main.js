@@ -20,6 +20,7 @@ if (navClose) {
     })
 }
 
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav_link')
 

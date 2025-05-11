@@ -630,6 +630,13 @@ img{
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
 }
+.qualification_img {
+    width: 40px;
+    height: 40px;
+    box-shadow: grey 3px 3px 5px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 100%;
+}
 
 .qualification_calendar{
     font-size: var(--smaller-font-size);
@@ -763,6 +770,69 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background: #0056b3;
+}
+
+.repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-height: 400px;
+    /* Fixed height */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.repo-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.repo-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#stats {
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.stats-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .portfolio_container{
     overflow: initial;
 }

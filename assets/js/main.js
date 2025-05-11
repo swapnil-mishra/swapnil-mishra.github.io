@@ -99,6 +99,51 @@ modalCloses.forEach((modalClose) => {
     })
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
+
+const username = "swapnil-mishra";
+const apiUrl = `https://api.github.com/users/${username}/repos`;
+
+async function fetchRepos() {
+    const response = await fetch(apiUrl);
+    const repos = await response.json();
+    const repoList = document.getElementById("repo-list");
+
+    repos.forEach((repo, index) => {
+        const repoCard = document.createElement("div");
+        repoCard.className = "repo-card page-" + (index < 5 ? "1" : "2");
+        repoCard.innerHTML = `
+                    <h3>${repo.name}</h3>
+                    <p>${repo.description || "No description available"}</p>
+                    <p>⭐ Stars: ${repo.stargazers_count} | 🍴 Forks: ${repo.forks_count}</p>
+                    <a href="${repo.html_url}" target="_blank">View Repository</a>
+                `;
+        repoList.appendChild(repoCard);
+    });
+
+    showPage(1); // Show top 5 by default
+}
+
+async function fetchStats() {
+    const response = await fetch(`https://api.github.com/users/${username}`);
+    const userData = await response.json();
+    const statsDiv = document.getElementById("stats");
+    statsDiv.innerHTML = `
+                <p>👥 Followers: ${userData.followers} | 🔄 Following: ${userData.following}</p>
+                <p>📂 Public Repositories: ${userData.public_repos}</p>
+            `;
+}
+
+function showPage(pageNumber) {
+    const allRepoCards = document.querySelectorAll(".repo-card");
+    allRepoCards.forEach(card => card.style.display = "none");
+
+    const visibleCards = document.querySelectorAll(`.page-${pageNumber}`);
+    visibleCards.forEach(card => card.style.display = "block");
+}
+
+fetchStats();
+fetchRepos();
+
 let swiperPortfolio = new Swiper('.portfolio_container', {
     cssMode: true,
     loop: true,

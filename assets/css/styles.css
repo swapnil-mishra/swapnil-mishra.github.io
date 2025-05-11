@@ -397,7 +397,14 @@ img{
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
 }
+.home_blob {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+
 
 .about_description{
     text-align: center;
@@ -558,6 +565,33 @@ img{
 .skills_open .skills_arrow{
     transform: rotate(-180deg);
 }
+
+.icon-row {
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .icon-skills {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position:relative;
+  }
+
+  .tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: none;
+    transform: translate(-50%, -100%);
+  }
 /*==================== QUALIFICATION ====================*/
 .qualification_tabs{
     display: flex;

@@ -65,6 +65,17 @@ tabs.forEach(tab => {
     })
 })
 
+function showTooltip(event, text) {
+    let tooltip = document.getElementById("tooltip");
+    tooltip.innerText = text;
+    tooltip.style.left = event.pageX + "px";
+    tooltip.style.top = event.pageY - 30 + "px";
+    tooltip.style.display = "block";
+  }
+
+  function hideTooltip() {
+    document.getElementById("tooltip").style.display = "none";
+  }
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services_modal'),
     modalBtns = document.querySelectorAll('.services_button'),

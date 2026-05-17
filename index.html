@@ -1,1196 +1,768 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta property="og:title" content="Swapnil Mishra"/>
-        <meta property="og:description" content="Software Engineer at Accenture"/>
-        <meta property="og:url" content="https://swapnil-mishra.github.io"/>
-        <meta property="og:image" content="https://github.com/swapnil-mishra/swapnil-mishra.github.io/blob/main/assets/img/PreviewImg.png"/>
-        <meta property="og:type" content="website"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Swapnil Mishra — Consultant (SDE III) at Deloitte USI. Software engineer specializing in ASP.NET, C#, SQL and Azure Cloud." />
+    <meta name="theme-color" content="#0a0e14" />
+    <meta name="author" content="Swapnil Mishra" />
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Swapnil Mishra — Software Engineer" />
+    <meta property="og:description" content="Consultant (SDE III), Deloitte USI. ASP.NET • C# • Azure Cloud." />
+    <meta property="og:url" content="https://swapnil-mishra.github.io" />
+    <meta property="og:image" content="https://swapnil-mishra.github.io/assets/img/PreviewImg.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-        <!--==================== favicon ====================-->
-        <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="25x25">
+    <title>Swapnil Mishra — Software Engineer</title>
 
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <!-- Flag JS availability before render so the hero intro can hide-then-reveal cleanly -->
+    <script>document.documentElement.classList.add('has-js');</script>
 
-        <title>Swapnil Mishra</title>
-    </head>
-    <body oncontextmenu="return false;">
-        <!-- Messenger Chat Plugin Code -->
-        <div id="fb-root"></div>
-        
-        <!-- Your Chat Plugin code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+
+    <!-- Preconnect to external CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <!-- Boot splash — visible while assets load, then JS fades it out -->
+    <div id="boot-splash" class="boot-splash" aria-hidden="true">
+        <div class="boot-spinner">
+            <svg class="boot-progress-ring" viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="boot-progress-track" cx="50" cy="50" r="46" />
+                <circle class="boot-progress-fill"  cx="50" cy="50" r="46" />
+            </svg>
+            <img src="assets/img/profile.png" alt="" class="boot-avatar" />
         </div>
-        
-        <script>
-            var chatbox = document.getElementById('fb-customer-chat');
-            chatbox.setAttribute("page_id", "105443908060349");
-            chatbox.setAttribute("attribution", "biz_inbox");
+        <p class="boot-label">Initializing portfolio<span class="boot-dots"></span>&nbsp;<span id="boot-percent">0</span>%</p>
+    </div>
 
-            window.fbAsyncInit = function () {
-                FB.init({
-                    xfbml: true,
-                    version: 'v11.0'
-                });
-            };
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <img src="assets/img/favicon.png" height="25px" width="25px" /><a href="#" class="nav_logo">Swapnil Mishra</a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active-link">
-                                <i class="uil uil-estate nav_icon"></i>Home
-                            </a>
-                            </li>
-                        
-                        <li class="nav_item">
-                            <a href="#about" class="nav_link">
-                                <i class="uil uil-user nav_icon"></i>About
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#services" class="nav_link">
-                                <i class="uil uil-lightbulb-alt nav_icon"></i>Knowledge Base
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="uil uil-file-alt nav_icon"></i>Skills
-                            </a>
-                        </li>
-                        
-                        <li class="nav_item">
-                            <a href="#portfolio" class="nav_link">
-                                <i class="uil uil-arrow nav_icon"></i>Portfolio
-                            </a>
-                        </li>
-                        
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="uil uil-message nav_icon"></i>Contact
-                            </a>
-                        </li>
-                        
-                    </ul>
-                    <i class="uil uil-times nav_close" id="nav-close"></i>
-                </div>
-                <div class="nav_btns">
-                    <!--Theme change buttom-->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav_toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#home" class="nav_logo">swapnil-mishra</a>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home_container container grid">
-                    <div class="home_content grid">
-                        <div class="home_social">
-                            <a href="https://facebook.com/swapnilmishra8" target="_blank" class="home_social-icon">
-                                <i class="uil uil-facebook-f"></i>
-                            </a>
-                            <a href="https://twitter.com/_swapnilmishra" target="_blank" class="home_social-icon">
-                                <i class="uil uil-twitter-alt"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" class="home_social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://github.com/swapnil-mishra" target="_blank" class="home_social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list" role="list">
+                    <li><a href="#home" class="nav_link active-link"><i class="uil uil-estate" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="#about" class="nav_link"><i class="uil uil-user" aria-hidden="true"></i>About</a></li>
+                    <li><a href="#services" class="nav_link"><i class="uil uil-lightbulb-alt" aria-hidden="true"></i>Knowledge</a></li>
+                    <li><a href="#skills" class="nav_link"><i class="uil uil-file-alt" aria-hidden="true"></i>Skills</a></li>
+                    <li><a href="#qualification" class="nav_link"><i class="uil uil-briefcase-alt" aria-hidden="true"></i>Experience</a></li>
+                    <li><a href="#portfolio" class="nav_link"><i class="uil uil-folder" aria-hidden="true"></i>Portfolio</a></li>
+                    <li><a href="#contact" class="nav_link"><i class="uil uil-message" aria-hidden="true"></i>Contact</a></li>
+                </ul>
+                <button class="nav_close" id="nav-close" aria-label="Close navigation">
+                    <i class="uil uil-times" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="nav_btns">
+                <button class="theme-toggle" id="theme-button" aria-label="Toggle theme" type="button">
+                    <i class="uil uil-moon" aria-hidden="true"></i>
+                </button>
+                <button class="nav_toggle" id="nav-toggle" aria-label="Open navigation" type="button">
+                    <i class="uil uil-apps" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <!--==================== HOME / TERMINAL HERO ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <div class="terminal" role="region" aria-label="Terminal introduction">
+                        <div class="terminal_bar">
+                            <span class="terminal_dot red" aria-hidden="true"></span>
+                            <span class="terminal_dot yellow" aria-hidden="true"></span>
+                            <span class="terminal_dot green" aria-hidden="true"></span>
+                            <span class="terminal_title">swapnil@portfolio:~</span>
                         </div>
-
-                        <div class="home_img">
-    <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <mask id="mask0" mask-type="alpha">
-            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-        </mask>
-        <g mask="url(#mask0)">
-            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-            <image class="home_blob-img" x='12' xlink:href="assets/img/profile.png" />
-        </g>
-    </svg>
-</div>
-
-                        <div class="home_data">
-                            <h1 class="home_title">Swapnil Mishra</h1>
-                            <h3 class="home_subtitle">Consultant (SDE III), Deloitte USI</h3>
-                            
-                            <div class="wrapper">
-                                <div class="static-txt home_subtitle">I'm a</div>
-                                <ul class="dynamic-txts home_subtitle">
-                                    <li><span>Designer</span></li>
-                                    <li><span>Developer</span></li>
-                                </ul>
+                        <div class="terminal_body">
+                            <div class="terminal_line">
+                                <span class="terminal_prompt"></span>
+                                <span class="terminal_cmd">whoami</span>
                             </div>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me<i class="uil uil-message button_icon"></i>
-                            </a>
+                            <p class="terminal_output"><strong class="glitch" data-text="Swapnil Mishra">Swapnil Mishra</strong></p>
+
+                            <div class="terminal_line">
+                                <span class="terminal_prompt"></span>
+                                <span class="terminal_cmd">cat role.txt</span>
+                            </div>
+                            <p class="terminal_output">
+                                Consultant <span class="accent">(SDE III)</span> · Deloitte USI
+                            </p>
+
+                            <div class="terminal_line">
+                                <span class="terminal_prompt"></span>
+                                <span class="terminal_cmd">echo $WORK</span>
+                            </div>
+                            <p class="terminal_output">
+                                I build
+                                <span class="typed-wrap">
+                                    <span class="typed-text" id="typed"></span><span class="cursor" aria-hidden="true">&nbsp;</span>
+                                </span>
+                            </p>
+
+                            <div class="terminal_line">
+                                <span class="terminal_prompt"></span>
+                                <span class="terminal_cmd">stack --list</span>
+                            </div>
+                            <p class="terminal_output">
+                                <span class="neon">[</span> ASP.NET · C# · Azure · SQL · Python <span class="neon">]</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="home_scroll">
-                        <a href="#about" class="home_scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                            <span class="home_scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+
+                    <h1 class="sr-only">Swapnil Mishra — Software Engineer & Consultant</h1>
+
+                    <div class="home_cta">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class="uil uil-message" aria-hidden="true"></i> Contact me
+                        </a>
+                        <a href="https://github.com/swapnil-mishra" target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="uil uil-github-alt" aria-hidden="true"></i> GitHub
                         </a>
                     </div>
                 </div>
-            </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section_title">About Me</h2>
-                <span class="section_subtitle">My introduction</span>
-                <div class="about_container container grid">
-                    <img src="assets/img/swapnilmishrapic.jpeg" alt="Swapnil Mishra" class="about_img">
-                    <div class="about_data">
-                        <p class="about_description">
-                            Swapnil Mishra is a Microsoft Certified Consultant (SDE III) at Deloitte USI (Hyderabad) with close to 4 years of specialized experience in designing and developing robust, scalable software solutions leveraging ASP.NET (C#), SQL, and Azure Cloud technologies. Her expertise spans application and web development, database management, scripting, cloud computing, and CI/CD, ensuring efficient, high-performance software solutions.<br>
-                        </p>
-                        <div class="about_info">
+                <div class="home_avatar">
+                    <div class="home_social" aria-label="Social links">
+                        <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" rel="noopener noreferrer" class="home_social_icon" aria-label="LinkedIn">
+                            <i class="uil uil-linkedin-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/swapnil-mishra" target="_blank" rel="noopener noreferrer" class="home_social_icon" aria-label="GitHub">
+                            <i class="uil uil-github-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/_swapnilmishra" target="_blank" rel="noopener noreferrer" class="home_social_icon" aria-label="Twitter">
+                            <i class="uil uil-twitter-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://facebook.com/swapnilmishra8" target="_blank" rel="noopener noreferrer" class="home_social_icon" aria-label="Facebook">
+                            <i class="uil uil-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="home_avatar_frame">
+                        <div class="home_avatar_inner">
+                            <img src="assets/img/profile.png" alt="Portrait of Swapnil Mishra" width="360" height="360" loading="eager" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section_title">About</h2>
+            <span class="section_subtitle">profile.md</span>
+            <div class="about_container container grid">
+                <img src="assets/img/swapnilmishrapic.jpeg" alt="Swapnil Mishra at work" class="about_img" loading="lazy" data-aos />
+                <div class="about_data" data-aos>
+                    <p class="about_description" id="about-description">
+                        Microsoft-certified Consultant (SDE III) at <strong>Deloitte USI</strong> with <strong>5 years</strong> of experience architecting and shipping production-grade software on the .NET and Azure stack. I work across the full lifecycle &mdash; system design, ASP.NET Core APIs, distributed services, CI/CD, observability, and performance tuning &mdash; backed by SQL Server, Cosmos DB, and a broad surface of Azure services. Comfortable owning features end-to-end and making pragmatic engineering trade-offs at scale.
+                    </p>
+                    <div class="about_info">
+                        <div class="about_info_item">
+                            <span class="about_info_title counting" data-stat-key="projects" data-count="21">0</span>
+                            <span class="about_info_name">Projects<br />Shipped</span>
+                        </div>
+                        <div class="about_info_item">
+                            <span class="about_info_title counting" data-stat-key="companies" data-count="2">0</span>
+                            <span class="about_info_name">Companies<br />Worked</span>
+                        </div>
+                        <div class="about_info_item">
+                            <span class="about_info_title counting" data-stat-key="experience" data-count="0" data-since="2021-09-01">0</span>
+                            <span class="about_info_name">Years of<br />Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== KNOWLEDGE BASE ====================-->
+        <section class="services section" id="services">
+            <h2 class="section_title">Knowledge Base</h2>
+            <span class="section_subtitle">what I know about</span>
+            <div class="services_container container grid">
+                <article class="services_content" data-aos>
+                    <div class="kb-flipper" tabindex="0" role="button" aria-label="Reveal Object Oriented Analysis &amp; Design topics">
+                        <div class="kb-face kb-front">
+                            <i class="uil uil-object-group services_icon" aria-hidden="true"></i>
+                            <h3 class="services_title">Object Oriented<br />Analysis &amp; Design</h3>
+                            <span class="kb-hint"><i class="uil uil-redo" aria-hidden="true"></i> Hover / tap to flip</span>
+                        </div>
+                        <div class="kb-face kb-back">
+                            <h4 class="kb-back-title">Object Oriented Analysis &amp; Design</h4>
+                            <ul class="kb-back-list">
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Object Oriented Programming (OOP)</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Object Oriented Design (OOD) / UML</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Design Patterns</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services_content" data-aos>
+                    <div class="kb-flipper" tabindex="0" role="button" aria-label="Reveal Data Structures &amp; Algorithms topics">
+                        <div class="kb-face kb-front">
+                            <i class="uil uil-game-structure services_icon" aria-hidden="true"></i>
+                            <h3 class="services_title">Data Structures<br />&amp; Algorithms</h3>
+                            <span class="kb-hint"><i class="uil uil-redo" aria-hidden="true"></i> Hover / tap to flip</span>
+                        </div>
+                        <div class="kb-face kb-back">
+                            <h4 class="kb-back-title">Data Structures &amp; Algorithms</h4>
+                            <ul class="kb-back-list">
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Arrays · Linked Lists</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Stacks · Queues</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Trees · Graphs</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Hashing · Sets · Maps</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Searching · Sorting</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Dynamic Programming</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Greedy Algorithms</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services_content" data-aos>
+                    <div class="kb-flipper" tabindex="0" role="button" aria-label="Reveal Software Development topics">
+                        <div class="kb-face kb-front">
+                            <i class="uil uil-apps services_icon" aria-hidden="true"></i>
+                            <h3 class="services_title">Software<br />Development</h3>
+                            <span class="kb-hint"><i class="uil uil-redo" aria-hidden="true"></i> Hover / tap to flip</span>
+                        </div>
+                        <div class="kb-face kb-back">
+                            <h4 class="kb-back-title">Software Development</h4>
+                            <ul class="kb-back-list">
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Frontend Development</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Backend Development</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Application Development</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Web Development</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Windows Application Development</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services_content" data-aos>
+                    <div class="kb-flipper" tabindex="0" role="button" aria-label="Reveal Software Design &amp; Architecture topics">
+                        <div class="kb-face kb-front">
+                            <i class="uil uil-atom services_icon" aria-hidden="true"></i>
+                            <h3 class="services_title">Software Design<br />&amp; Architecture</h3>
+                            <span class="kb-hint"><i class="uil uil-redo" aria-hidden="true"></i> Hover / tap to flip</span>
+                        </div>
+                        <div class="kb-face kb-back">
+                            <h4 class="kb-back-title">Software Design &amp; Architecture</h4>
+                            <ul class="kb-back-list">
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>OOP &amp; Design</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>SOLID Principles</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Test Driven Development (TDD)</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>SDLC</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Large-Scale System Design</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Distributed Systems</span></li>
+                                <li><i class="uil uil-check-circle" aria-hidden="true"></i><span>Distributed Computing</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">technical stack</span>
+            <div class="skills_container container grid">
+                <div data-aos>
+                    <div class="skills_content skills_open">
+                        <button class="skills_header" type="button" aria-expanded="true">
+                            <i class="uil uil-brackets-curly skills_icon" aria-hidden="true"></i>
+                            <h3 class="skills_titles">Frontend</h3>
+                            <i class="uil uil-angle-down skills_arrow" aria-hidden="true"></i>
+                        </button>
+                        <div class="skills_list">
+                            <div class="icon-row">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="icon-skills" data-tip="HTML5" alt="HTML5" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="icon-skills" data-tip="CSS3" alt="CSS3" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="icon-skills" data-tip="JavaScript" alt="JavaScript" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="icon-skills" data-tip="Bootstrap" alt="Bootstrap" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="icon-skills" data-tip="React" alt="React" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos>
+                    <div class="skills_content skills_close">
+                        <button class="skills_header" type="button" aria-expanded="false">
+                            <i class="uil uil-server-network-alt skills_icon" aria-hidden="true"></i>
+                            <h3 class="skills_titles">Backend & DevOps</h3>
+                            <i class="uil uil-angle-down skills_arrow" aria-hidden="true"></i>
+                        </button>
+                        <div class="skills_list">
+                            <div class="icon-row">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" class="icon-skills" data-tip="C#" alt="C#" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" class="icon-skills" data-tip=".NET" alt=".NET" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="icon-skills" data-tip="Java" alt="Java" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" class="icon-skills" data-tip="PowerShell" alt="PowerShell" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon-skills" data-tip="Git" alt="Git" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" class="icon-skills" data-tip="Jenkins" alt="Jenkins" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos>
+                    <div class="skills_content skills_close">
+                        <button class="skills_header" type="button" aria-expanded="false">
+                            <i class="uil uil-robot skills_icon" aria-hidden="true"></i>
+                            <h3 class="skills_titles">AI / ML</h3>
+                            <i class="uil uil-angle-down skills_arrow" aria-hidden="true"></i>
+                        </button>
+                        <div class="skills_list">
+                            <div class="icon-row">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="icon-skills" data-tip="Python" alt="Python" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" class="icon-skills" data-tip="NumPy" alt="NumPy" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" class="icon-skills" data-tip="Pandas" alt="Pandas" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" class="icon-skills" data-tip="Matplotlib" alt="Matplotlib" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos>
+                    <div class="skills_content skills_close">
+                        <button class="skills_header" type="button" aria-expanded="false">
+                            <i class="uil uil-database skills_icon" aria-hidden="true"></i>
+                            <h3 class="skills_titles">Databases</h3>
+                            <i class="uil uil-angle-down skills_arrow" aria-hidden="true"></i>
+                        </button>
+                        <div class="skills_list">
+                            <div class="icon-row">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" class="icon-skills" data-tip="SQL Server" alt="SQL Server" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="icon-skills" data-tip="MySQL" alt="MySQL" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" class="icon-skills" data-tip="Oracle Database" alt="Oracle Database" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cosmosdb/cosmosdb-original.svg" class="icon-skills" data-tip="Cosmos DB" alt="Cosmos DB" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="icon-skills" data-tip="MongoDB" alt="MongoDB" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" class="icon-skills" data-tip="Azure SQL" alt="Azure SQL" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos>
+                    <div class="skills_content skills_close">
+                        <button class="skills_header" type="button" aria-expanded="false">
+                            <i class="uil uil-cloud-computing skills_icon" aria-hidden="true"></i>
+                            <h3 class="skills_titles">Cloud</h3>
+                            <i class="uil uil-angle-down skills_arrow" aria-hidden="true"></i>
+                        </button>
+                        <div class="skills_list">
+                            <div class="icon-row">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" class="icon-skills" data-tip="Microsoft Azure" alt="Microsoft Azure" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg" class="icon-skills" data-tip="Azure DevOps" alt="Azure DevOps" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos>
+                    <div class="skills_content skills_close">
+                        <button class="skills_header" type="button" aria-expanded="false">
+                            <i class="uil uil-swatchbook skills_icon" aria-hidden="true"></i>
+                            <h3 class="skills_titles">UI / UX</h3>
+                            <i class="uil uil-angle-down skills_arrow" aria-hidden="true"></i>
+                        </button>
+                        <div class="skills_list">
+                            <div class="icon-row">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" class="icon-skills" data-tip="Adobe Illustrator" alt="Adobe Illustrator" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="icon-skills" data-tip="Adobe Photoshop" alt="Adobe Photoshop" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg" class="icon-skills" data-tip="Adobe XD" alt="Adobe XD" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="icon-skills" data-tip="Figma" alt="Figma" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sketch/sketch-original.svg" class="icon-skills" data-tip="Sketch" alt="Sketch" loading="lazy" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" class="icon-skills" data-tip="GIMP" alt="GIMP" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tooltip" role="tooltip"></div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section_title">Experience</h2>
+            <span class="section_subtitle">git log --author=swapnil</span>
+            <div class="qualification_container container">
+                <div class="qualification_tabs" role="tablist">
+                    <button class="qualification_button qualification_active" data-target="#experience" role="tab" aria-selected="true" type="button">
+                        <i class="uil uil-briefcase-alt" aria-hidden="true"></i> Experience
+                    </button>
+                    <button class="qualification_button" data-target="#achievements" role="tab" aria-selected="false" type="button">
+                        <i class="uil uil-award" aria-hidden="true"></i> Achievements
+                    </button>
+                </div>
+
+                <div class="qualification_sections">
+                    <!-- Static fallback content. data/profile.json overrides this when fetched. -->
+                    <div class="qualification_content qualification_active" data-content id="experience" role="tabpanel">
+                        <div class="qualification_data" data-aos>
                             <div>
-                                <span class="about_info-title counting" data-count="21">0</span>
-                                <span class="about_info-name">Completed<br>Projects</span>
+                                <img src="assets/img/Deloitte-Logo.png" alt="Deloitte logo" class="qualification_img" loading="lazy" />
+                                <h3 class="qualification_title">Deloitte USI</h3>
+                                <span class="qualification_subtitle">Consultant (SDE III)</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i> Feb 2025 — Present
+                                </div>
                             </div>
+                            <div><span class="qualification_rounder"></span></div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div></div>
+                            <div><span class="qualification_rounder"></span></div>
                             <div>
-                                <span class="about_info-title counting" data-count="2">0</span>
-                                <span class="about_info-name">Companies<br>Worked</span>
+                                <img src="assets/img/accenturelogo.png" alt="Accenture logo" class="qualification_img" loading="lazy" />
+                                <h3 class="qualification_title">Accenture</h3>
+                                <span class="qualification_subtitle">Senior Software Engineer (SSE)</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i> Jun 2024 — Jan 2025
+                                </div>
                             </div>
+                        </div>
+                        <div class="qualification_data" data-aos>
                             <div>
-                                <span class="about_info-title counting" data-count="4">0</span><span>
-                                <span class="about_info-name">Years of<br>experience(yrs)</span>
+                                <img src="assets/img/accenturelogo.png" alt="Accenture logo" class="qualification_img" loading="lazy" />
+                                <h3 class="qualification_title">Accenture</h3>
+                                <span class="qualification_subtitle">Software Engineer (SE)</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i> Dec 2022 — May 2024
+                                </div>
+                            </div>
+                            <div><span class="qualification_rounder"></span></div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div></div>
+                            <div><span class="qualification_rounder"></span></div>
+                            <div>
+                                <img src="assets/img/accenturelogo.png" alt="Accenture logo" class="qualification_img" loading="lazy" />
+                                <h3 class="qualification_title">Accenture</h3>
+                                <span class="qualification_subtitle">Associate Software Engineer (ASE)</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i> Sep 2021 — Nov 2022
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qualification_content" data-content id="achievements" role="tabpanel">
+                        <div class="qualification_data" data-aos>
+                            <div>
+                                <h3 class="qualification_title">Sparkling Star Winner, ACE @ Accenture</h3>
+                                <span class="qualification_subtitle">Recognition for best project delivery &amp; client PM appreciation</span>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2022 — 2024</div>
+                            </div>
+                            <div><span class="qualification_rounder"></span></div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div></div>
+                            <div><span class="qualification_rounder"></span></div>
+                            <div>
+                                <h3 class="qualification_title">TCS InfraMind Season IV — Semi-finalist</h3>
+                                <span class="qualification_subtitle">Project theme: Enterprise AI</span>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2021</div>
+                            </div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div>
+                                <h3 class="qualification_title">Google Hash Code</h3>
+                                <span class="qualification_subtitle">AIR 1553 · Worldwide rank 4769 · 7,885,740 points</span>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2021</div>
+                            </div>
+                            <div><span class="qualification_rounder"></span></div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div></div>
+                            <div><span class="qualification_rounder"></span></div>
+                            <div>
+                                <h3 class="qualification_title">IEEE SPC Paper Presentation</h3>
+                                <span class="qualification_subtitle">Finalist</span>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2020</div>
+                            </div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div>
+                                <h3 class="qualification_title">Campus Ambassador — Cognizance, IIT Roorkee</h3>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2018</div>
+                            </div>
+                            <div><span class="qualification_rounder"></span></div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div></div>
+                            <div><span class="qualification_rounder"></span></div>
+                            <div>
+                                <h3 class="qualification_title">Inter-district Digital Art Winner — PANACHE</h3>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2018</div>
+                            </div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div>
+                                <h3 class="qualification_title">Campus Ambassador — Internshala</h3>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2017</div>
+                            </div>
+                            <div><span class="qualification_rounder"></span></div>
+                        </div>
+                        <div class="qualification_data" data-aos>
+                            <div></div>
+                            <div><span class="qualification_rounder"></span></div>
+                            <div>
+                                <h3 class="qualification_title">Campus Ambassador — IIIT Allahabad</h3>
+                                <div class="qualification_calendar"><i class="uil uil-calendar-alt" aria-hidden="true"></i> 2015 — 2016</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== Knowledge Base ====================-->
-            <section class="services section" id="services">
-                <h2 class="section_title">Knowledge Base</h2>
-                <span class="section_subtitle">What I know about</span>
-                <div class="services_container container grid">
-                    <!------------Knowledge Base 1------------>
-                    <div class="services_content">
-                        <div>
-                            <i class="uil uil-object-group services_icon"></i>
-                            <h3 class="services_title">Object Oriented Analysis and Design<br>(OOAD)</h3>
-                        </div>
-                        <span class="button button--flex button--small button--link services_button">
-                            View More <i class="uil uil-arrow-right button_icon"></i>
-                        </span>
-                        <div class="services_modal">
-                            <div class="services_modal-content">
-                                <h4 class="services_modal-title">Object Oriented Analysis and Design<br>(OOAD)</h4>
-                                <i class="uil uil-times services_modal-close"></i>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">ls ~/repos</span>
 
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Object Oriented Programming (OOP)</p>
-                                    
-                                 <li class="services_modal-service">
-                                     <i class="uil uil-check-circle services_modal-icon"></i>
-                                     <p>Object Oriented Design (OOD)/UML</p>
-                                 
-                                 <li class="services_modal-service">
-                                     <i class="uil uil-check-circle services_modal-icon"></i>
-                                     <p>Design Patterns</p>
-                                 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container">
+                <div id="stats" aria-live="polite"></div>
+                <div class="repo-container" id="repo-list" aria-live="polite"></div>
 
-                     <!------------Knowledge Base 2------------>
-                     <div class="services_content">
-                         <div>
-                             <i class="uil uil-game-structure services_icon"></i>
-                             <h3 class="services_title">Data Structures and<br>Algorithms</h3>
-                         </div>
-                         <span class="button button--flex button--small button--link services_button">
-                             View More <i class="uil uil-arrow-right button_icon"></i>
-                         </span>
-                         <div class="services_modal">
-                             <div class="services_modal-content">
-                                 <h4 class="services_modal-title">Data Structures and<br>Algorithms</h4>
-                                 <i class="uil uil-times services_modal-close"></i>
-                     
-                                 <ul class="services_modal-services grid">
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Arrays</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Linked Lists</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Stacks</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Queues</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Trees</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Graphs</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Hashing</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Set</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Maps</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Searching Algorithms</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Sorting Algorithms</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Dynamic Programming</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Greedy Algorithms</p>       
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
-
-                     <!------------Knowledge Base 3------------>
-                     <div class="services_content">
-                         <div>
-                             <i class="uil uil-apps services_icon"></i>
-                             <h3 class="services_title">Software<br>Development</h3>
-                         </div>
-                         <span class="button button--flex button--small button--link services_button">
-                             View More <i class="uil uil-arrow-right button_icon"></i>
-                         </span>
-                         <div class="services_modal">
-                             <div class="services_modal-content">
-                                 <h4 class="services_modal-title">Software<br>Development</h4>
-                                 <i class="uil uil-times services_modal-close"></i>
-                     
-                                 <ul class="services_modal-services grid">
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Frontend Development</p>
-                                     
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Backend Development</p>
-                                     
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Application Development</p>
-                                     
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Web Development</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Window Application Development</p>>
-                                     
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
-
-                     <!------------Knowledge Base 4------------>
-                     <div class="services_content">
-                         <div>
-                             <i class="uil uil-atom services_icon"></i>
-                             <h3 class="services_title">Software Design and<br>Architecture</h3>
-                         </div>
-                         <span class="button button--flex button--small button--link services_button">
-                             View More <i class="uil uil-arrow-right button_icon"></i>
-                         </span>
-                         <div class="services_modal">
-                             <div class="services_modal-content">
-                                 <h4 class="services_modal-title">Software Design and<br>Architecture</h4>
-                                 <i class="uil uil-times services_modal-close"></i>
-                                 <ul class="services_modal-services grid">
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Object Oriented Programming and Design</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>SOLID Principles</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Test Driven Development (TDD)</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Software Development Life Cycle (SDLC)</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Large-Scale System Design</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Distributed Systems</p>
-                                     <li class="services_modal-service">
-                                         <i class="uil uil-check-circle services_modal-icon"></i>
-                                         <p>Distributed Computing</p>
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
-
-                </div>
-         </section>
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section_title">Skills</h2>
-                <span class="section_subtitle">Technical Skills</span>
-                <div class="skills_container container grid">
-                    
-                    <div>
-                        <!-----frontend skills------->
-                        <div class="skills_content skills_open">
-                            <div class="skills_header">
-                                <i class="uil uil-brackets-curly skills_icon"></i>
-                                <div>
-                                    <h1 class="skills_titles">FrontEnd Skills</h1>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="icon-row">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'HTML')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'CSS')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'JavaScript')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Bootstrap')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'React')" onmouseout="hideTooltip(event)" />
-                                </div>
-
-                                <div id="tooltip" class="tooltip"></div>
-                                <!--<div class="skills_data">
-                                    <div class="skills_titles">
-                                        <h3 class="skills_name">HTML5</h3>
-                                        <span class="skills_number"></span>
-                                    </div>
-                                    <div class="skills_bar">
-                                        <span class="skills_percentage skills_html"></span>
-                                    </div>
-                                </div>-->
-                                <!--
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>HTML5</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>CSS3</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>JavaScript</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Bootstrap</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>ReactJS</p>
-                                </ul>
-                            -->
-                            </div> 
-                        </div>
-                    </div>
-
-                    <div>
-                        <!-----backend skills------->
-                        <div class="skills_content skills_close">
-                            <div class="skills_header">
-                                <i class="uil uil-server-network-alt skills_icon"></i>
-                                <div>
-                                    <h1 class="skills_titles">BackEnd Skills</h1>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="icon-row">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'C#')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" class="icon-skills" onmouseover="showTooltip(event, '.NET')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Java')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'PowerShell')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Git')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Jenkins')" onmouseout="hideTooltip(event)" />
-                                    </div>
-
-                                    <div id="tooltip" class="tooltip"></div>
-
-                                <!--
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>C#</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>ASP.NET</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>ASP.NET Core</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Windows Communication Foundation (WCF)</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Java</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>PowerShell</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>API Design and Development</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>GIT</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Jenkins</p>
-                                </ul>
-                            -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!-----Artficial Intelligence and Machine Learning------->
-                        <div class="skills_content skills_close">
-                            <div class="skills_header">
-                                <i class="uil uil-robot skills_icon"></i>
-                                <div>
-                                    <h1 class="skills_titles">Artficial Intelligence & Machine Learning</h1>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="icon-row">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Python')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'NumPy')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Pandas')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Matplotlib')" onmouseout="hideTooltip(event)" />
-                             </div>
-
-                                    <div id="tooltip" class="tooltip"></div>
-
-                                <!--
-                            <img src="https://skillicons.dev/icons?i=python,flask,numpy,pandas" alt="AI Skills" class="icon-skills" />
-
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Python</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Numpy</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Pandas</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Matplotlib</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Seaborn</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Natural Language Processing (NLP): NLTK</p>
-                                </ul>        
-                            -->     
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!-----database skills------->
-                        <div class="skills_content skills_close">
-                            <div class="skills_header">
-                                <i class="uil uil-database skills_icon"></i>
-                                <div>
-                                    <h1 class="skills_titles">Database Skills</h1>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="icon-row">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'SQL Server')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'MySQL')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Oracle Database')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cosmosdb/cosmosdb-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'CosmosDB')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'MongoDB')" onmouseout="hideTooltip(event)" />
-                                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Azure SQL Database')" onmouseout="hideTooltip(event)" />
-                                </div>
-
-                                    <div id="tooltip" class="tooltip"></div>
-
-                                <!--
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>SQL Server</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>MySQL</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Oracle Database</p>
-                                </ul>
-                            -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!-----cloud skills------->
-                        <div class="skills_content skills_close">
-                            <div class="skills_header">
-                                <i class="uil uil-cloud-computing skills_icon"></i>
-                                <div>
-                                    <h1 class="skills_titles">Cloud Computing Skills</h1>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="icon-row">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Microsoft Azure')" onmouseout="hideTooltip(event)" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Azure DevOps')" onmouseout="hideTooltip(event)" />
-                                    </div>
-
-                                    <div id="tooltip" class="tooltip"></div>
-
-                                <!--
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Microsoft Azure Cloud</p>
-
-                                </ul>
-                            -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!-----design skills------->
-                        <div class="skills_content skills_close">
-                            <div class="skills_header">
-                                <i class="uil uil-swatchbook skills_icon"></i>
-                                <div>
-                                    <h1 class="skills_titles">UI/UX Skills</h1>
-                                </div>
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                            </div>
-                            <div class="skills_list grid">
-                                <div class="icon-row">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" class="icon-skills" onmouseover="showTooltip(event, 'Adobe Illustrator')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Adobe Photoshop')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Adobe XD')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Figma')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sketch/sketch-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'Sketch')" onmouseout="hideTooltip(event)" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" class="icon-skills" onmouseover="showTooltip(event, 'GIMP')" onmouseout="hideTooltip(event)" />
-                                </div>
-
-                                <div id="tooltip" class="tooltip"></div>
-
-
-                                <!--
-                                <ul class="services_modal-services grid">
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Visual Design (Adobe Illustrator)</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Interaction Design</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Wireframing and Prototyping (Figma, Sketch)</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Responsive Design</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>Graphic Design (Adobe Photoshop, GIMP)</p>
-                                    <li class="services_modal-service">
-                                        <i class="uil uil-check-circle services_modal-icon"></i>
-                                        <p>User Research and Experience Design (Adobe XD)</p>
-                                </ul>
-                            -->
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section_title">Experience</h2>
-                <span class="section_subtitle">My works and achievements</span>
-                <div class="qualification_container container">
-                    <div class="qualification_tabs">
-                        <div class="qualification_button button--flex qualification_active" data-target='#experience'>
-                            <i class="uil uil-briefcase-alt qualification_icon"></i>
-                            Experience
-                        </div>
-                        <div class="qualification_button button--flex" data-target='#achievements'>
-                            <i class="uil uil-award qualification_icon"></i>
-                            Achievements
-                        </div>
-                    </div>
-
-                    <div class="qualification_sections">
-                        <!---------Qualification Content 1------------>
-                        <div class="qualification_content qualification_active" data-content id="experience">
-                            <!-----------Qualification 0----------->
-                            <div class="qualification_data">
-                                <div>
-                                    <span><img src="assets/img/Deloitte-Logo.png" alt="Deloitte USI lofo" class="qualification_img">
-                                    <h3 class="qualification_title">Deloitte USI</h3>
-                                    <span class="qualification_subtitle">Consultant (SDE III)</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        Feb 2025 - Present
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                            <!-----------Qualification 1----------->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                                <div>
-                                    <span><img src="assets/img/accenturelogo.png" alt="Accenture Logo" class="qualification_img">
-                                    <h3 class="qualification_title">Accenture</h3>
-                                    <span class="qualification_subtitle">Senior Software Engineer (SSE)</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        Jun 2024 - Jan 2025
-                                    </div>
-                                </div>
-                            </div>
-                            <!-----------Qualification 2----------->
-                            <div class="qualification_data">
-                                <div>
-                                    <span><img src="assets/img/accenturelogo.png" alt="Accenture Logo" class="qualification_img">
-                                    <h3 class="qualification_title">Accenture</h3>
-                                    <span class="qualification_subtitle">Software Engineer (SE)</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        Dec 2022 - May 2024
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <!-----------Qualification 3----------->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    
-                                </div>
-                                <div>
-                                    <span><img src="assets/img/accenturelogo.png" alt="Accenture Logo" class="qualification_img">
-                                    <h3 class="qualification_title">Accenture</h3>
-                                    <span class="qualification_subtitle">Associate Software Engineer (ASE)</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        Sep 2021 - Nov 2022
-                                    </div>
-                                </div>
-                            </div>
-                           
-
-                    
-                        </div>
-
-                        <!---------Qualification Content 2------------>
-                        <div class="qualification_content" data-content id="achievements">
-                            
-                            <!-----------Qualification 1----------->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title"><i>Sparkling Star Winner, ACE</i> at Accenture for best project delivery and appreciation from client PM</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022 - 2024
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                            <!-----------Qualification 2----------->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification_title">Semi-finalist in TCS Inframind Season IV, Project Theme-Enterprise AI</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2021
-                                    </div>
-                                </div>
-                            </div>
-                            <!-----------Qualification 3----------->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Google Hash Code AIR 1553 and wordwide rank 4769 with a total score of 7,885,740 points.</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2021
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-
-                            <!-----------Qualification 4----------->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification_title">Finalist in IEEE SPC paper presentation competition</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2020
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <!-----------Qualification 5----------->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Campus Ambassador at IIIT Allahabad</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2015 - 2016
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                            <!-----------Qualification 6----------->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification_title">Campus Ambassador at Cognizance -IIT Roorkee</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2018 - 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <!-----------Qualification 7----------->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Inter-district digital art winner at PANACHE</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2018 - 2018
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                        
-                            <!-----------Qualification 8----------->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification_title">Campus Ambassador at Internshala</h3>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2017 - 2017
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="stats-container" data-aos>
+                    <h2>🏆 GitHub Trophies</h2>
+                    <img src="https://github-profile-trophy.vercel.app/?username=swapnil-mishra&margin-w=15&theme=darkhub" alt="GitHub trophies for swapnil-mishra" loading="lazy" />
                 </div>
 
-            </section>
-
-            
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section_title">Portfolio</h2>
-                <span class="section_subtitle">Most recent works</span>
-                <!-- Tabs for Pagination -->
-                <div class="tab-container">
-                    <button class="tab" onclick="showPage(1)">Top 5</button>
-                    <button class="tab" onclick="showPage(2)">More Repositories</button>
-                </div>
-                
-                <div id="stats"></div>
-                
-                <!-- Repository Display with Scrollable Container -->
-                <div class="repo-container" id="repo-list"></div>
-                
-                <!-- GitHub Trophies -->
-                <div class="stats-container">
-                    <h2>🏆 GitHub Trophies</h2><br>
-                    <img src="https://github-profile-trophy.vercel.app/?username=swapnil-mishra&margin-w=15" alt="GitHub Trophies">
-                </div>
-                
-                <!-- GitHub Contribution Streak -->
-                <div class="stats-container">
-                    <h2>🔥 My Contributions</h2><br>
-                    <a href="https://git.io/streak-stats" target="_blank">
-                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=swapnil-mishra&theme=dark" alt="GitHub Streak">
+                <div class="stats-container" data-aos>
+                    <h2>🔥 Contribution Streak</h2>
+                    <a href="https://git.io/streak-stats" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=swapnil-mishra&theme=dark" alt="GitHub contribution streak" loading="lazy" />
                     </a>
                 </div>
-
-            
-            </section>
-
-            <!--==================== certification ====================-->
-            <section class="certification section">
-                <h2 class="section_title">Certifications</h2>
-                <span class="section_subtitle">Certified in</span>
-                <div class="certification_container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!---------certification 1---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/az400.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">DevOps Engineer Expert (AZ-400)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 1---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/pl600.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Power Platform Solution Architect Expert (PL-600)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 1---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/az204.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Developing Solutions for Microsoft Azure (AZ-204)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 1---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/sc200.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Security Operations Analyst Associate (SC-200)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 2---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/az900.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Microsoft Azure Fundamentals (AZ-900)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 3---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/pl900.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Microsoft Power Platform Fundamentals (PL-900)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>            
-                        </div>
-                        <!---------certification 4---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/sc900.png" alt="" class="certification_img">
-
-                                    <div>
-                                        <h3 class="certification_name">Microsoft Security, Compliance, and Identity Fundamentals (SC-900)</h3>
-                                        <span class="certification_client">Microsoft</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 5---------------->
-                        <div class="certification_content swiper-slide ">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/fcc.svg" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Responsive Web Design</h3>
-                                        <span class="certification_client">freeCodeCamp</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 6---------------->
-                        <div class="certification_content swiper-slide">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/ibm.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Introduction to Cloud Development with HTML, CSS, & JavaScript</h3>
-                                        <span class="certification_client">IBM (edX)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!---------certification 7---------------->
-                        <div class="certification_content swiper-slide">
-                            <div class="certification_data">
-                                <div class="certification_header">
-                                    <img src="assets/img/google.png" alt="" class="certification_img">
-                        
-                                    <div>
-                                        <h3 class="certification_name">Fundamentals of digital marketing</h3>
-                                        <span class="certification_client">Google</span>
-                                    </div>
-                                </div>                            
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination swiper-pagination-certification"></div>
-                </div>
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section_title">Contact Me</h2>
-                <span class="section_subtitle">Get in touch</span>
-                <div class="contact_container container grid">
-                    <div>
-                        <div class="contact_information">
-                            <i class="uil uil-envelope contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Email</h3>
-                                <span ><a href="mailto:swapnil8mishra@gmail.com" class="contact_subtitle">swapnil8mishra@gmail.com</a></span>
-                            </div>
-                        </div>
-
-                        <div class="contact_information">
-                            <i class="uil uil-map-marker contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Location</h3>
-                                <span class="contact_subtitle">Hyderabad, India</span>
-                            </div>
-                        </div>
-                        <div class="contact_information">
-                            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
-                                data-type="HORIZONTAL" data-vanity="swapnil-mishra" data-version="v1"><a class="badge-base__link LI-simple-link"
-                                    href="https://in.linkedin.com/in/swapnil-mishra?trk=profile-badge"></a></div>
-
-                            </div>
-                        
-                    <div class="contact_information">
-                            <a href="https://facebook.com/swapnilmishra8" target="_blank" class="footer_social">
-                                <i class="uil uil-facebook-f contact_icon"></i>
-                            </a>
-                            <a href="https://twitter.com/_swapnilmishra" target="_blank" class="footer_social">
-                                <i class="uil uil-twitter-alt contact_icon"></i>
-                            </a>
-                            <a href="https://instagram.com/_swapnilmishra" target="_blank" class="footer_social">
-                                <i class="uil uil-instagram contact_icon"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" class="footer_social">
-                                <i class="uil uil-linkedin-alt contact_icon"></i>
-                            </a>
-                            <a href="https://github.com/swapnil-mishra" target="_blank" class="footer_social">
-                                <i class="uil uil-github-alt contact_icon"></i>    </a>
-                        </div>
-                        <div class="contact_information">
-                            <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:300px;">
-                                <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
-                                        style="height:100%;width:100%;border:0;" frameborder="0"
-                                        src="https://www.google.com/maps/embed/v1/place?q=Hyderabad,+Telangana,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                                </div><a class="googlemaps-made" rel="nofollow" href="https://www.bootstrapskins.com/themes"
-                                    id="grab-map-authorization">premium bootstrap themes</a>
-                                <style>
-                                    #my-map-canvas img {
-                                        max-width: none !important;
-                                        background: none !important;
-                                        font-size: inherit;
-                                        font-weight: inherit;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-                    </div>
-                    <form name='contactform'action="" class="contact_form grid">
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLScAS4KAHCrjdKQkI6rzQAfGa1d3tDlz3CgGAu8nWRhWMdhcbw/viewform?embedded=true"
-                            width="100%" height="906" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </form>
-            </section>
-            
-        </main>
-        
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer_bg">
-                <div class="footer_container container grid">
-                    <div>
-                        <h1 class="footer_title">Swapnil Mishra</h1>
-                        <span class="footer_subtitle">Consultant (SDE III), Deloitte USI</span>
-                    </div>
-
-                    <ul class="footer_links">
-                        <li>
-                            <a href="#services" class="footer_link">Knowledge Base</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer_link">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer_link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer_link">Contact Me</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer_socials">
-                        <a href="https://facebook.com/swapnilmishra8" target="_blank" class="footer_social">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com/_swapnilmishra" target="_blank" class="footer_social">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <a href="https://instagram.com/_swapnilmishra" target="_blank" class="footer_social">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" class="footer_social">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="https://github.com/swapnil-mishra" target="_blank" class="footer_social">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                <p class="footer_copy">&#169; Swapnil Mishra. All rights reserved.</p>
             </div>
-            
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup_icon"></i>
-        </a>
-        
+        </section>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--==================== CERTIFICATIONS ====================-->
+        <section class="certification section" id="certifications">
+            <h2 class="section_title">Certifications</h2>
+            <span class="section_subtitle">verified credentials</span>
+            <div class="certification_container container swiper-container">
+                <!-- Static fallback. data/profile.json overrides on fetch. -->
+                <div class="swiper-wrapper" id="cert-wrapper">
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/az400.png" alt="AZ-400 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">DevOps Engineer Expert (AZ-400)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/pl600.png" alt="PL-600 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Power Platform Solution Architect Expert (PL-600)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/az204.png" alt="AZ-204 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Developing Solutions for Microsoft Azure (AZ-204)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/sc200.png" alt="SC-200 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Security Operations Analyst Associate (SC-200)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/az900.png" alt="AZ-900 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Microsoft Azure Fundamentals (AZ-900)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/pl900.png" alt="PL-900 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Power Platform Fundamentals (PL-900)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/sc900.png" alt="SC-900 badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Security, Compliance &amp; Identity Fundamentals (SC-900)</h3>
+                                <span class="certification_client">Microsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/fcc.svg" alt="freeCodeCamp badge" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Responsive Web Design</h3>
+                                <span class="certification_client">freeCodeCamp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/ibm.png" alt="IBM logo" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Cloud Development with HTML, CSS &amp; JavaScript</h3>
+                                <span class="certification_client">IBM · edX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certification_content swiper-slide">
+                        <div class="certification_header">
+                            <img src="assets/img/google.png" alt="Google logo" class="certification_img" loading="lazy" />
+                            <div>
+                                <h3 class="certification_name">Fundamentals of Digital Marketing</h3>
+                                <span class="certification_client">Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-        <!--==================== J Query ====================-->
-        <script src="assets/js/jquery.min.js"></script>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact</h2>
+            <span class="section_subtitle">./send-message.sh</span>
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <a href="mailto:swapnil8mishra@gmail.com" class="contact_subtitle">swapnil8mishra@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Hyderabad, India</span>
+                        </div>
+                    </div>
+                    <div class="contact_socials" aria-label="Social profiles">
+                        <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="LinkedIn">
+                            <i class="uil uil-linkedin-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/swapnil-mishra" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="GitHub">
+                            <i class="uil uil-github-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/_swapnilmishra" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="Twitter">
+                            <i class="uil uil-twitter-alt" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/_swapnilmishra" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="Instagram">
+                            <i class="uil uil-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://facebook.com/swapnilmishra8" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="Facebook">
+                            <i class="uil uil-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="contact_map" data-aos>
+                        <iframe
+                            title="Location: Hyderabad, India"
+                            src="https://www.google.com/maps/embed/v1/place?q=Hyderabad,+Telangana,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact_form" data-aos>
+                    <iframe
+                        title="Contact form"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScAS4KAHCrjdKQkI6rzQAfGa1d3tDlz3CgGAu8nWRhWMdhcbw/viewform?embedded=true"
+                        loading="lazy">Loading…</iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_container container">
+            <div>
+                <h2 class="footer_title">Swapnil Mishra</h2>
+                <span class="footer_subtitle">Consultant (SDE III), Deloitte USI</span>
+            </div>
+            <ul class="footer_links" role="list">
+                <li><a href="#services" class="footer_link">Knowledge Base</a></li>
+                <li><a href="#skills" class="footer_link">Skills</a></li>
+                <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
+                <li><a href="#contact" class="footer_link">Contact</a></li>
+            </ul>
+            <div class="footer_socials">
+                <a href="https://www.linkedin.com/in/swapnil-mishra/" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="LinkedIn">
+                    <i class="uil uil-linkedin-alt" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/swapnil-mishra" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="GitHub">
+                    <i class="uil uil-github-alt" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/_swapnilmishra" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="Twitter">
+                    <i class="uil uil-twitter-alt" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/_swapnilmishra" target="_blank" rel="noopener noreferrer" class="footer_social" aria-label="Instagram">
+                    <i class="uil uil-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer_copy">
+            &copy; <span id="year"></span> Swapnil Mishra. All rights reserved.
+            <span class="footer_sync">· Profile last synced: <span id="last-synced">—</span></span>
+        </p>
+    </footer>
 
-        <!--====================Linkedin Iframe==============-->
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    </body>
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="uil uil-arrow-up scrollup_icon" aria-hidden="true"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
 </html>

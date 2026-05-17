@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "name": "Swapnil Mishra",
+    "title": "Consultant (SDE III)",
+    "currentCompany": "Deloitte USI",
+    "location": "Hyderabad, India",
+    "email": "swapnil8mishra@gmail.com",
+    "summary": "Microsoft-certified Consultant (SDE III) at <strong>Deloitte USI</strong> with <strong>5 years</strong> of experience architecting and shipping production-grade software on the .NET and Azure stack. I work across the full lifecycle — system design, ASP.NET Core APIs, distributed services, CI/CD, observability, and performance tuning — backed by SQL Server, Cosmos DB, and a broad surface of Azure services. Comfortable owning features end-to-end and making pragmatic engineering trade-offs at scale.",
+    "lastSynced": "2026-05-18",
+    "linkedinUrl": "https://www.linkedin.com/in/swapnil-mishra/"
+  },
+  "stats": {
+    "projects": 21,
+    "companies": 2,
+    "experienceSince": "2021-09-01"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/swapnil-mishra/",
+    "github": "https://github.com/swapnil-mishra",
+    "twitter": "https://twitter.com/_swapnilmishra",
+    "instagram": "https://instagram.com/_swapnilmishra",
+    "facebook": "https://facebook.com/swapnilmishra8"
+  },
+  "experience": [
+    {
+      "company": "Deloitte USI",
+      "role": "Consultant (SDE III)",
+      "from": "Feb 2025",
+      "to": "Present",
+      "logo": "assets/img/Deloitte-Logo.png"
+    },
+    {
+      "company": "Accenture",
+      "role": "Senior Software Engineer (SSE)",
+      "from": "Jun 2024",
+      "to": "Jan 2025",
+      "logo": "assets/img/accenturelogo.png"
+    },
+    {
+      "company": "Accenture",
+      "role": "Software Engineer (SE)",
+      "from": "Dec 2022",
+      "to": "May 2024",
+      "logo": "assets/img/accenturelogo.png"
+    },
+    {
+      "company": "Accenture",
+      "role": "Associate Software Engineer (ASE)",
+      "from": "Sep 2021",
+      "to": "Nov 2022",
+      "logo": "assets/img/accenturelogo.png"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Sparkling Star Winner, ACE @ Accenture",
+      "subtitle": "Recognition for best project delivery & client PM appreciation",
+      "dates": "2022 — 2024"
+    },
+    {
+      "title": "TCS InfraMind Season IV — Semi-finalist",
+      "subtitle": "Project theme: Enterprise AI",
+      "dates": "2021"
+    },
+    {
+      "title": "Google Hash Code",
+      "subtitle": "AIR 1553 · Worldwide rank 4769 · 7,885,740 points",
+      "dates": "2021"
+    },
+    {
+      "title": "IEEE SPC Paper Presentation",
+      "subtitle": "Finalist",
+      "dates": "2020"
+    },
+    {
+      "title": "Campus Ambassador — Cognizance, IIT Roorkee",
+      "dates": "2018"
+    },
+    {
+      "title": "Inter-district Digital Art Winner — PANACHE",
+      "dates": "2018"
+    },
+    {
+      "title": "Campus Ambassador — Internshala",
+      "dates": "2017"
+    },
+    {
+      "title": "Campus Ambassador — IIIT Allahabad",
+      "dates": "2015 — 2016"
+    }
+  ],
+  "certifications": [
+    { "name": "DevOps Engineer Expert (AZ-400)", "issuer": "Microsoft", "img": "assets/img/az400.png" },
+    { "name": "Power Platform Solution Architect Expert (PL-600)", "issuer": "Microsoft", "img": "assets/img/pl600.png" },
+    { "name": "Developing Solutions for Microsoft Azure (AZ-204)", "issuer": "Microsoft", "img": "assets/img/az204.png" },
+    { "name": "Security Operations Analyst Associate (SC-200)", "issuer": "Microsoft", "img": "assets/img/sc200.png" },
+    { "name": "Microsoft Azure Fundamentals (AZ-900)", "issuer": "Microsoft", "img": "assets/img/az900.png" },
+    { "name": "Power Platform Fundamentals (PL-900)", "issuer": "Microsoft", "img": "assets/img/pl900.png" },
+    { "name": "Security, Compliance & Identity Fundamentals (SC-900)", "issuer": "Microsoft", "img": "assets/img/sc900.png" },
+    { "name": "Responsive Web Design", "issuer": "freeCodeCamp", "img": "assets/img/fcc.svg" },
+    { "name": "Cloud Development with HTML, CSS & JavaScript", "issuer": "IBM · edX", "img": "assets/img/ibm.png" },
+    { "name": "Fundamentals of Digital Marketing", "issuer": "Google", "img": "assets/img/google.png" }
+  ]
+}

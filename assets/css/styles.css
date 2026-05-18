@@ -915,14 +915,23 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 @media (max-width: 700px) {
-    .qualification_data { grid-template-columns: max-content 1fr; }
-    .qualification_data > div:first-child:not(:nth-child(2)) { text-align: left; order: 2; padding-left: .25rem; }
+    .qualification_content { padding-left: 1.5rem; }
+    .qualification_data { grid-template-columns: 24px 1fr; gap: 1rem; }
+    .qualification_data > div:first-child:not(:nth-child(2)) {
+        text-align: left; justify-self: stretch; order: 2; padding: .25rem 0;
+    }
     .qualification_data > div:nth-child(2) { order: 1; width: 24px; padding-top: .25rem; }
-    .qualification_data > div:last-child { order: 3; padding-left: .25rem; }
+    .qualification_data > div:last-child:not(:nth-child(2)) {
+        text-align: left; justify-self: stretch; order: 3; padding: .25rem 0;
+    }
     .qualification_data > div:first-child:empty { display: none; }
-    .road-track { left: 12px; transform: none; width: 24px; }
-    .road-car { left: 12px; transform: translate(-50%, -50%); width: 36px; height: 36px; }
+    .qualification_data .qualification_img { margin-left: 0; margin-right: auto; }
+    /* Dot column center = 1.5rem padding + 12px (half of 24px col) = 36px from panel left.
+       Road and car share that axis so the car sits on the road, not beside it. */
+    .road-track { left: 36px; transform: translateX(-50%); width: 24px; }
+    .road-car { left: 36px; width: 36px; height: 36px; }
     .road-car svg { width: 20px; height: 20px; }
+    .road-car::after { width: 32px; height: 48px; }
 }
 
 /*==================== PORTFOLIO ====================*/
